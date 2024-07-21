@@ -114,7 +114,8 @@ $(document).ready(function () {
     Swal.fire({
       title: textConfig.text7,
       html: true,
-      width: 900,
+      width: 600,
+      imageUrl: "img/image1.jpg",
       padding: "3em",
       html: "<input type='text' class='form-control' id='txtReason'  placeholder='Whyyy'>",
       background: '#fff url("img/iput-bg.jpg")',
