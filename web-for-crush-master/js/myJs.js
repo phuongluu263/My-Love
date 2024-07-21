@@ -4,7 +4,7 @@ const textConfig = {
     "Tớ có điều này muốn hỏi cậu nhớ phải trả lời thật lòng với mình nhaaa 😘😘😘",
   text3: "Cậu cũng có thích mình mà phải không 🥹🥹🥹",
   text4: "Nếu cậu không trả lời mà thoát ra tức là cậu cũng có thích mình ",
-  text5: "Cậu mơ à? Ko biết",
+  text5: "Cậu mơ à? Ko biết😜😜😜",
   text6: "Mình cũng thích cậu ❤️❤️❤️",
   text7: "Hãy nói lí do cậu thích mình đi",
   text8: "❤️ Gửi cho tớ ❤️",
@@ -31,8 +31,6 @@ $(document).ready(function () {
   $("#yes").html(textConfig.text6);
 
   function firstQuestion() {
-    var audio = new Audio("sound/sound1.mp3");
-    audio.play();
     $(".content").hide();
     Swal.fire({
       title: textConfig.text1,
@@ -43,6 +41,8 @@ $(document).ready(function () {
       background: '#fff url("img/iput-bg.jpg")',
       imageAlt: "Custom image",
     }).then(function () {
+      var audio = new Audio("sound/sound1.mp3");
+      audio.play();
       $(".content").show(200);
     });
   }
